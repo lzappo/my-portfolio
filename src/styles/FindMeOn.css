@@ -1,0 +1,45 @@
+.find-me-section {
+    text-align: center;
+    padding-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1.5s forwards ease-out;
+  }
+  
+  .find-me-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #64ffda;
+    
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .social-icon {
+    font-size: 2.5rem;
+    color: #ccd6f6;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+    color: #64ffda;
+  }
+
+  @media (min-width: 768px) {
+    .find-me-section h2 {
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }

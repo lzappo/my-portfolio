@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', 'JetBrains Mono', 'IBM Plex Mono', monospace;
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  color: #ccd6f6; 
+  
+}
+
+#root {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  main {
+    flex: 1;
+    width: 100%;
+  }
+  
+
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #5affd8; 
+}
+
+
+.btn {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar, .footer {
+  background-color: #0a192f;
+  color: #ccd6f6;
+
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
