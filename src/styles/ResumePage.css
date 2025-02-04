@@ -1,0 +1,51 @@
+.resume-section {
+    padding: 4rem 2rem;
+  }
+  
+  /* TITLE */
+  .resume-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  
+  .resume-section .btn {
+    margin-bottom: 2rem;
+  }
+  
+  /* RESUME PREVIEW */
+  .resume-preview {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .resume-image {
+    width: 100%;
+    max-width: 1000px; /* Adjust as needed */
+    height: auto;
+    border: 2px solid #5affd8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* DOWNLOAD BUTTON */
+  .resume-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    border: 2px solid #5affd8;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #5affd8;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .resume-download:hover {
+    background-color: #5affd8;
+    color: #333;
+  }
+  
