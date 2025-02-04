@@ -5,6 +5,7 @@ import bodybuilderImage from "../assets/developer-image.svg";
 import { motion } from "framer-motion";
 import "../styles/HomePage.css";
 import FindMeOn from "@/components/FindMeOn";
+import ContactButton from "@/components/ContactButton";
 
 const HomePage = () => {
   return (
@@ -30,7 +31,10 @@ const HomePage = () => {
             <Link href="#projects" to="/projects" className="btn primary-btn">
               View My Work
             </Link>
-            <a href="#contact" className="btn secondary-btn">
+            <a
+              href="mailto:luizappitelli@gmail.com?subject=Let's%20Connect&body=Hi%20Lui,%20I%20saw%20your%20portfolio%20and%20wanted%20to%20reach%20out!"
+              className="btn secondary-btn"
+            >
               Get in Touch
             </a>
           </motion.div>

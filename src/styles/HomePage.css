@@ -200,15 +200,16 @@
   
     /* 📌 BUTTON STYLES */
     .hero-buttons {
-      flex-direction: row;
-      gap: 1rem;
+      justify-content: space-between;
     }
   
-    .btn {
+   .hero-buttons .btn {
       padding: 0.8rem 2rem;
       font-size: 1rem;
       border-radius: 8px;
       transition: all 0.3s ease-in-out;
+      flex: 1;
+      text-align: center;
     }
   
     .btn:hover {
