@@ -17,7 +17,7 @@ const HomePage = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="hero-title">Hi, I'm Lui Zappitelli</h1>
+          <h1 className="hero-title">Hi, I'm Lui Zappitelli!</h1>
           <p className="hero-subtitle">
             Front-End Developer | React Enthusiast | Bodybuilder | Lifelong
             Learner
