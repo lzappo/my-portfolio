@@ -7,7 +7,7 @@ const projects = [
     description: "A cool web application built with React.",
     image: "https://via.placeholder.com/300",
     github: "https://github.com/lzappo/moshifyxlzappo",
-    demo: "moshifyxlzappo.vercel.app",
+    demo: "https://moshifyxlzappo.vercel.app",
   },
   {
     title: "Project 2",
