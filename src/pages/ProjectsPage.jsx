@@ -4,8 +4,8 @@ import "../styles/ProjectsPage.css";
 const projects = [
   {
     title: "Project 1",
-    description: "A cool web application built with React.",
-    image: "https://via.placeholder.com/300",
+    description: "A website built with HTML and CSS alongside Mosh.",
+    image: "https://moshifyxlzappo.vercel.app/images/banner@2x.webp",
     github: "https://github.com/lzappo/moshifyxlzappo",
     demo: "https://moshifyxlzappo.vercel.app",
   },
