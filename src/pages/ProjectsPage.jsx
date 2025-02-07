@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/ProjectsPage.css";
+import worldImage from "../assets/world-image.svg";
 
 const projects = [
   {
@@ -11,17 +12,17 @@ const projects = [
   },
   {
     title: "Project 2",
-    description: "A unique front-end project showcasing animations.",
-    image: "https://via.placeholder.com/300",
-    github: "https://github.com/yourusername/project2",
-    demo: "https://yourdemo.com/project2",
+    description: "An intensive videogame database with filtering abilities",
+    image: "https://lui-game-hub.vercel.app/assets/logo-ff4914e6.webp",
+    github: "https://github.com/lzappo/game-hub",
+    demo: "https://lui-game-hub.vercel.app/",
   },
   {
     title: "Project 3",
-    description: "An innovative full-stack project with API integration.",
-    image: "https://via.placeholder.com/300",
-    github: "https://github.com/yourusername/project3",
-    demo: "https://yourdemo.com/project3",
+    description: "This portfolio project :)",
+    image: worldImage,
+    github: "https://github.com/lzappo/my-portfolio",
+    demo: "https://luizappitelli.vercel.app",
   },
 ];
 

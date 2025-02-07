@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import heroImage from "../assets/hero-image.svg";
-import bodybuilderImage from "../assets/developer-image.svg";
+import devImage from "../assets/developer-image.svg";
 import { motion } from "framer-motion";
 import "../styles/HomePage.css";
 import FindMeOn from "@/components/FindMeOn";
@@ -84,7 +84,7 @@ const HomePage = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <img src={bodybuilderImage} alt="Lui Zappitelli" />
+          <img src={devImage} alt="Lui Zappitelli" />
         </motion.div>
       </section>
       <FindMeOn />
