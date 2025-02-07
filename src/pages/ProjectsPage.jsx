@@ -5,13 +5,13 @@ const projects = [
   {
     title: "Project 1",
     description: "A cool web application built with React.",
-    image: "https://via.placeholder.com/300", // Replace with actual image path
-    github: "https://github.com/yourusername/project1",
-    demo: "https://yourdemo.com/project1",
+    image: "https://via.placeholder.com/300",
+    github: "https://github.com/lzappo/moshifyxlzappo",
+    demo: "moshifyxlzappo.vercel.app",
   },
   {
     title: "Project 2",
-    description: "A unique frontend project showcasing animations.",
+    description: "A unique front-end project showcasing animations.",
     image: "https://via.placeholder.com/300",
     github: "https://github.com/yourusername/project2",
     demo: "https://yourdemo.com/project2",
