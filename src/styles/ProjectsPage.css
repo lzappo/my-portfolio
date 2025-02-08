@@ -1,12 +1,11 @@
-/* PROJECTS SECTION */
+
 .projects-section {
     text-align: center;
     padding: 4rem 2rem;
-    background: linear-gradient(to right, #2b5876, #4e4376);
     color: #ccd6f6;
   }
   
-  /* TITLE */
+
   .projects-title {
     font-size: 2rem;
     font-weight: bold;
@@ -24,17 +23,17 @@
     font-size: 1rem;
   }
   
-  /* PROJECT GRID - SINGLE COLUMN BY DEFAULT */
+
   .projects-grid {
     display: grid;
-    grid-template-columns: 1fr; /* 1 column by default */
+    grid-template-columns: 1fr; 
     gap: 2rem;
     justify-content: center;
   }
   
-  /* PROJECT CARD */
+
   .project-card {
-    max-width: 500px; /* Prevents overlap */
+    max-width: 500px; 
     border: 2px solid #5affd8;
     border-radius: 10px;
     padding: 1.5rem;
@@ -47,7 +46,7 @@
     box-shadow: 0 0 10px rgba(90, 255, 216, 0.5);
   }
   
-  /* PROJECT IMAGE */
+
   .project-image {
     width: 100%;
     max-width: 450px;
@@ -56,7 +55,7 @@
     margin-bottom: 1rem;
   }
   
-  /* TITLE & DESCRIPTION */
+
   .project-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -68,14 +67,14 @@
     margin-bottom: 1rem;
   }
   
-  /* BUTTON CONTAINER - SIDE BY SIDE BUTTONS */
+
   .project-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
   
-  /* BUTTON STYLES */
+
   .project-btn {
     padding: 0.8rem 2rem;
     border: 2px solid #5affd8;
@@ -84,6 +83,13 @@
     color: #5affd8;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .project-btn svg {
+    font-size: 1.33rem;
   }
   
   .project-btn:hover {
@@ -91,11 +97,7 @@
     color: #333;
   }
   
-  /* ============================= */
-  /* 📌 RESPONSIVE LAYOUT */
-  /* ============================= */
-  
-  /* TABLET: 2 Columns */
+ 
   @media (min-width: 768px) {
     .projects-grid {
       grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Ensures equal spacing */
@@ -104,7 +106,7 @@
     }
   }
   
-  /* DESKTOP: 3 Columns */
+
   @media (min-width: 1200px) {
     .projects-grid {
       grid-template-columns: repeat(3, minmax(300px, 1fr));

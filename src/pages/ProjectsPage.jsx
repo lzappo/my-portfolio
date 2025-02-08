@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/ProjectsPage.css";
 import worldImage from "../assets/world-image.svg";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
@@ -52,7 +53,7 @@ const ProjectsPage = () => {
                 rel="noopener noreferrer"
                 className="btn project-btn"
               >
-                GitHub
+                <FaGithub /> GitHub
               </a>
               <a
                 href={project.demo}
@@ -60,6 +61,7 @@ const ProjectsPage = () => {
                 rel="noopener noreferrer"
                 className="btn project-btn"
               >
+                <FaExternalLinkAlt />
                 Live Demo
               </a>
             </div>
