@@ -5,21 +5,21 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A website built with HTML and CSS alongside Mosh.",
+    title: "Moshify",
+    description: "A website built with just HTML and CSS alongside Mosh.",
     image: "https://moshifyxlzappo.vercel.app/images/banner@2x.webp",
     github: "https://github.com/lzappo/moshifyxlzappo",
     demo: "https://moshifyxlzappo.vercel.app",
   },
   {
-    title: "Project 2",
+    title: "Game-Hub",
     description: "An intensive videogame database with filtering abilities",
     image: "https://lui-game-hub.vercel.app/assets/logo-ff4914e6.webp",
     github: "https://github.com/lzappo/game-hub",
     demo: "https://lui-game-hub.vercel.app/",
   },
   {
-    title: "Project 3",
+    title: "My-Portfolio",
     description: "This portfolio project :)",
     image: worldImage,
     github: "https://github.com/lzappo/my-portfolio",
