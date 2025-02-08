@@ -64,12 +64,11 @@
 /* GRID LAYOUT */
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
   justify-items: center;
   align-items: center;
 }
-
 /* CERTIFICATION CARD */
 .cert-card {
   background: rgba(255, 255, 255, 0.05);
@@ -92,6 +91,7 @@
   height: auto;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 /* CERTIFICATION TEXT */
@@ -100,5 +100,18 @@
   font-size: 1rem;
   color: #ccd6f6;
 
+}
+
+
+
+
+/* Desktop: Slightly wider layout */
+@media (min-width: 1024px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cert-image {
+    max-width: 600px; /* Increase size on larger screens */
+  }
 }
 
