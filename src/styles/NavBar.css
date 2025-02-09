@@ -39,6 +39,8 @@
 
 .nav-list.open {
   display: flex;
+  width: 100%;
+  gap: 1.5rem;
 }
 
 .nav-list li {
@@ -48,7 +50,7 @@
 .nav-list a {
   text-decoration: none;
   color: #5affd8;
-  font-size: 1rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -124,6 +126,10 @@
       display: flex; 
       padding: 0; 
     }
+
+    .nav-list a {
+      font-size: 1.2rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -135,6 +141,7 @@
   .nav-list a {
     flex-direction: column; 
     align-items: center;
+  
   }
 
   .nav-list a .nav-icon {
@@ -162,9 +169,7 @@
       gap: 1.5rem; 
     }
 
-  .nav-list a {
-    font-size: 0.9rem; 
-  }
+ 
   .nav-list {
       gap: 0.5rem;
     }
@@ -190,3 +195,6 @@
 
 
  
+
+
+  
