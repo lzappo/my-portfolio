@@ -3,8 +3,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  color: white;
-  
+  color: white; 
 }
 
 .logo {
@@ -42,6 +41,40 @@
   width: 100%;
   gap: 1.5rem;
 }
+
+/* mobile responsiveness navbar */
+@media (min-width: 561px) and (max-width: 768px) {
+  .nav-list.open {
+    padding-right: 7rem; 
+  }
+}
+@media (min-width: 431px) and (max-width: 560px) {
+  .nav-list.open {
+    padding-right: 5rem; 
+  }
+}
+@media (max-width: 430px) {
+  .nav-list.open {
+     padding-right: 2.7rem; 
+    }
+  }
+@media (max-width: 414px) {
+  .nav-list.open {
+     padding-right: 1.9rem; 
+    }
+  }
+  @media (max-width: 375px) {
+    .nav-list.open {
+       padding-right: 1.3rem; 
+      }
+  }
+@media (max-width: 360px) {
+  .nav-list.open {
+     padding-right: 1rem; 
+    }
+  }
+  
+
 
 .nav-list li {
   margin: 0;
