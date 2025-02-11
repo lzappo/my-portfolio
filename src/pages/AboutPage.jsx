@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/AboutPage.css";
 import aboutImage from "../assets/about-image.svg";
 import { motion } from "framer-motion";

@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/ResumePage.css";
 import { FaDownload } from "react-icons/fa";
 import resumePDF from "../assets/LuiZappitelli_CV.pdf";

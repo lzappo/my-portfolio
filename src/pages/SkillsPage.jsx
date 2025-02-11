@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/SkillsPage.css";
 
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";

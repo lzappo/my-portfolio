@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "../styles/Footer.css";
 

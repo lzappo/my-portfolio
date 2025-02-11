@@ -1,4 +1,3 @@
-import React from "react";
 import devImage from "../assets/developer-image.svg";
 import { motion } from "framer-motion";
 
