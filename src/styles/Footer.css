@@ -9,7 +9,6 @@
 
   }
   
-  /* Three-Column Layout */
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -27,7 +26,6 @@
     padding: 0;
   }
   
-  /* Social Media Icons */
   .footer-socials {
     display: flex;
     gap: 1rem;
@@ -49,13 +47,11 @@
     color: #64ffda;
   }
   
-  /* Bottom Copyright */
   .footer-copyright {
     opacity: 0.8;
     align-self: center;
   }
   
-  /* Responsive Layout for Larger Screens */
   @media (min-width: 768px) {
     .footer-container {
       flex-direction: row;
@@ -63,8 +59,5 @@
       padding: 0 3rem;
       gap: 0;
     }
-
-    
-
-  }
+ }
   

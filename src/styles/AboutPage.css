@@ -29,7 +29,6 @@
     margin-bottom: 1rem;
   }
   
-  /* About Image */
   .about-image img {
     padding-bottom: 2rem;
     width: 90%;
@@ -38,9 +37,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* ======================= */
-  /* Responsive Design */
-  /* ======================= */
   @media (min-width: 768px) {
     .about-page {
       flex-direction: row;

@@ -42,7 +42,6 @@
   gap: 1.5rem;
 }
 
-/* mobile responsiveness navbar */
 @media (min-width: 561px) and (max-width: 768px) {
   .nav-list.open {
     padding-right: 7rem; 
