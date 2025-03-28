@@ -1,117 +1,124 @@
-
 .projects-section {
-    text-align: center;
-    padding: 4rem 2rem;
-    color: #ccd6f6;
-  }
-  
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #ccd6f6;
+}
 
-  .projects-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 3.5rem;
-  }
+.projects-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3.5rem;
+}
 
-  .projects-title h2 {
-    margin: 0;
-    padding-bottom: 1rem;
-  }
+.projects-title h2 {
+  margin: 0;
+  padding-bottom: 1rem;
+}
 
-  .projects-title p {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-  }
-  
+.projects-title p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.project-card {
+  max-width: 500px;
+  border: 2px solid #5affd8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(90, 255, 216, 0.5);
+}
+
+.project-image {
+  width: 100%;
+  max-width: 450px;
+  min-height: 350px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-tag {
+  font-size: 0.75rem;
+  background-color: #ff6600;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-btn {
+  padding: 0.8rem 2rem;
+  border: 2px solid #5affd8;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #5affd8;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-btn svg {
+  font-size: 1.33rem;
+}
+
+.project-btn:hover {
+  background-color: #5affd8;
+  color: #333;
+}
+
+@media (min-width: 768px) {
   .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 2rem;
-    justify-content: center;
-    justify-items: center;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
   }
-  
+}
 
-  .project-card {
-    max-width: 500px; 
-    border: 2px solid #5affd8;
-    border-radius: 10px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    max-width: 1200px;
   }
-  
-  .project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(90, 255, 216, 0.5);
-  }
-  
-
-  .project-image {
-    width: 100%;
-    max-width: 450px;
-    min-height: 350px;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-  }
-  
-
-  .project-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .project-description {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-
-  .project-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-
-  .project-btn {
-    padding: 0.8rem 2rem;
-    border: 2px solid #5affd8;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #5affd8;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .project-btn svg {
-    font-size: 1.33rem;
-  }
-  
-  .project-btn:hover {
-    background-color: #5affd8;
-    color: #333;
-  }
-  
- 
-  @media (min-width: 768px) {
-    .projects-grid {
-      grid-template-columns: repeat(2, minmax(300px, 1fr)); 
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-  }
-  
-
-  @media (min-width: 1200px) {
-    .projects-grid {
-      grid-template-columns: repeat(3, minmax(300px, 1fr));
-      max-width: 1200px;
-    }
-  }
-  
+}
