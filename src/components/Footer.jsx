@@ -1,23 +1,5 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "../styles/Footer.css";
-
-const socialLinks = [
-  {
-    name: "GitHub",
-    icon: <FaGithub />,
-    url: "https://github.com/yourusername",
-  },
-  {
-    name: "LinkedIn",
-    icon: <FaLinkedin />,
-    url: "https://linkedin.com/in/yourusername",
-  },
-  {
-    name: "Twitter",
-    icon: <FaTwitter />,
-    url: "https://twitter.com/yourusername",
-  },
-];
+import socialLinks from "@/data/socialLinks";
 
 const Footer = () => {
   return (

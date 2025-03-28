@@ -7,6 +7,9 @@ import react2CertImg from "../assets/certifications/react2.png";
 import js1CertImg from "../assets/certifications/js1.png";
 import js2CertImg from "../assets/certifications/js2.png";
 import htmlcssCertImg from "../assets/certifications/html-css.png";
+import reactNative1CertImg from '../assets/certifications/react-native1.png';
+import reactNative2CertImg from '../assets/certifications/react-native1.png';
+
 
 const certifications = [
   {
@@ -22,7 +25,7 @@ const certifications = [
     image: js1CertImg,
   },
   {
-    title: "Ultimate JavaScript Part : Advanced Topics",
+    title: "Ultimate JavaScript Part 2: Advanced Topics",
     issuer: "CodeWithMosh",
     year: "2025",
     image: js2CertImg,
@@ -38,6 +41,18 @@ const certifications = [
     issuer: "CodeWithMosh",
     year: "2024",
     image: react2CertImg,
+  },
+  {
+    title: "The Ultimate React Native Series: Fundamentals",
+    issuer: "CodeWithMosh",
+    year: "2025",
+    image: reactNative1CertImg,
+  },
+  {
+    title: "The Ultimate React Native Series: Advanced Concepts",
+    issuer: "CodeWithMosh",
+    year: "2025",
+    image: reactNative2CertImg,
   },
 ];
 
@@ -61,7 +76,7 @@ const ResumePage = () => {
           className="resume-image"
         />
       </div>
-      {/* 📜 Certifications Section */}
+
       <div className="certifications-section">
         <h3 className="certifications-title">Certifications & Courses</h3>
         <div className="certifications-grid">

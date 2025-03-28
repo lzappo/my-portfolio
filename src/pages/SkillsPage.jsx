@@ -8,6 +8,7 @@ const skills = [
   { name: "CSS", icon: <FaCss3Alt className="skill-icon" /> },
   { name: "JavaScript", icon: <IoLogoJavascript className="skill-icon" /> },
   { name: "React", icon: <FaReact className="skill-icon" /> },
+  { name: "React Native", icon: <FaReact className="skill-icon" /> },
 ];
 
 const SkillsPage = () => {

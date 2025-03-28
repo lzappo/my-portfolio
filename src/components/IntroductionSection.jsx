@@ -1,7 +1,7 @@
 import devImage from "../assets/developer-image.svg";
 import { motion } from "framer-motion";
 
-const AboutSection = () => {
+const IntroductionSection = () => {
   return (
     <section id="about" className="about-section">
       <motion.div
@@ -13,23 +13,24 @@ const AboutSection = () => {
       >
         <h2 className="about-title">Let me introduce myself</h2>
         <p className="about-description">
-          I fell in love with programming, and I’ve been exploring different
+          I fell in love with programming, and I've been exploring different
           technologies ever since.
         </p>
 
         <p className="about-description">
-          I have experience in JavaScript and React, and I’m always expanding my
-          knowledge in frontend development.
+          I have experience in JavaScript, React, and React Native, and I'm
+          always expanding my knowledge in both web and mobile development.
         </p>
 
         <p className="about-description">
-          My interests include building modern web applications, exploring UI/UX
-          design, and creating smooth, interactive user experiences.
+          My interests include building modern web applications, crafting native
+          mobile apps, and exploring UI/UX design to create smooth, interactive
+          user experiences.
         </p>
 
         <p className="about-description">
           Whenever possible, I also enjoy experimenting with new frameworks and
-          libraries to push the boundaries of web development.
+          libraries to push the boundaries of front-end and mobile development.
         </p>
       </motion.div>
       <motion.div
@@ -45,4 +46,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default IntroductionSection;
