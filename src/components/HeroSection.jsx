@@ -29,7 +29,6 @@ const HeroSection = () => {
         <p className="hero-subtitle subtitle-with-emoji">
           {text}
           <span className="emoji"> {emoji}</span>
-          <span className="cursor">|</span>
         </p>
         <motion.div
           className="hero-buttons"
