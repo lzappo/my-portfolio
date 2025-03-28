@@ -1,9 +1,6 @@
-import React from "react";
-import "../styles/ProjectsPage.css";
-import worldImage from "../assets/world-image.svg";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import DoneWithIt from "@/assets/DoneWithIt.png";
 import projects from "@/data/projects";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import "../styles/ProjectsPage.css";
 
 const ProjectsPage = () => {
   return (

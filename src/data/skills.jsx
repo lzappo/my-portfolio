@@ -10,3 +10,5 @@ const skills = [
   { name: "React", icon: <SiReact className="skill-icon" /> },
   { name: "React Native📱", icon: <SiReact className="skill-icon" /> }, // subtle but clear
 ];
+
+export default skills;

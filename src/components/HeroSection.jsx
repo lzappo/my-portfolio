@@ -1,9 +1,22 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
+
 import heroImage from "../assets/hero-image.svg";
+import useTypewriter from "@/hooks/useTypewriter";
+
+const roles = [
+  { text: "Front-End Developer", emoji: "💻" },
+  { text: "Mobile App Developer", emoji: "📱" },
+  { text: "React & React Native Enthusiast", emoji: "👨‍💻" },
+  { text: "Bodybuilder", emoji: "🏋️" },
+  { text: "Lifelong Learner", emoji: "💡" },
+  { text: "Chloe's Daddy", emoji: "🐈" },
+];
 
 const HeroSection = () => {
+  const { text, emoji } = useTypewriter(roles);
+
   return (
     <section id="home" className="home-section">
       <motion.div
@@ -13,23 +26,10 @@ const HeroSection = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h1 className="hero-title">Hi, I'm Lui Zappitelli</h1>
-        <p className="hero-subtitle">
-          <Typewriter
-            words={[
-              "Front-End Developer 💻",
-              "Mobile App Developer 📱",
-              "React & React Native Enthusiast 👨‍💻",
-              "Lifelong Learner 💡",
-              "Bodybuilder 🏋️",
-              "Chloe's Daddy 🐈",
-            ]}
-            loop={true}
-            cursor
-            cursorStyle="|"
-            typeSpeed={60}
-            deleteSpeed={40}
-            delaySpeed={1500}
-          />
+        <p className="hero-subtitle subtitle-with-emoji">
+          {text}
+          <span className="emoji"> {emoji}</span>
+          <span className="cursor">|</span>
         </p>
         <motion.div
           className="hero-buttons"
@@ -37,7 +37,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <Link href="#projects" to="/projects" className="btn primary-btn">
+          <Link to="/projects" className="btn primary-btn">
             View My Work
           </Link>
           <a
@@ -48,6 +48,7 @@ const HeroSection = () => {
           </a>
         </motion.div>
       </motion.div>
+
       <motion.div
         className="hero-image"
         initial={{ opacity: 0, x: 50 }}
