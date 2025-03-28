@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 import heroImage from "../assets/hero-image.svg";
 
 const HeroSection = () => {
@@ -13,7 +14,22 @@ const HeroSection = () => {
       >
         <h1 className="hero-title">Hi, I'm Lui Zappitelli</h1>
         <p className="hero-subtitle">
-          Front-End & Mobile Developer | React • React Native • JavaScript
+          <Typewriter
+            words={[
+              "Front-End Developer 💻",
+              "Mobile App Developer 📱",
+              "React & React Native Enthusiast 👨‍💻",
+              "Lifelong Learner 💡",
+              "Bodybuilder 🏋️",
+              "Chloe's Daddy 🐈",
+            ]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={60}
+            deleteSpeed={40}
+            delaySpeed={1500}
+          />
         </p>
         <motion.div
           className="hero-buttons"

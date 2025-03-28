@@ -14,17 +14,18 @@ const AboutPage = () => {
         >
           About Me
         </motion.h2>
+
         <motion.p
           className="about-description"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Hey, I'm Lui Zappitelli, a passionate
-          <span className="orange"> Front-End Developer</span> and
-          <span className="orange"> React enthusiast</span>. I love building
-          sleek, user-friendly web experiences and continuously learning new
-          technologies.
+          Hey, I'm Lui Zappitelli — a passionate
+          <span className="orange"> Front-End & Mobile App Developer</span> with
+          a love for crafting modern, user-friendly experiences using
+          <span className="orange"> React</span> and
+          <span className="orange"> React Native</span>.
         </motion.p>
 
         <motion.p
@@ -33,10 +34,23 @@ const AboutPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          When I'm not coding, you’ll find me in the gym, lifting weights and
+          I’m constantly <span className="orange">leveling up</span> my skills —
+          whether it’s diving <span className="orange">deeper</span> into UI/UX,
+          experimenting with animations and APIs, or just shipping
+          <span className="orange"> clean</span>,
+          <span className="orange"> scalable</span> code.
+        </motion.p>
+
+        <motion.p
+          className="about-description"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          When I’m not coding, you’ll find me at the gym
           <span className="orange"> pushing my limits</span>. I believe in
-          <span className="orange"> constant self-improvement</span>, both in
-          tech and fitness.
+          <span className="orange"> self-improvement through discipline</span> —
+          in tech, fitness, and life.
         </motion.p>
 
         <motion.p
@@ -49,6 +63,16 @@ const AboutPage = () => {
           <span className="orange"> create impactful projects</span> that blend
           aesthetics with performance. Let’s
           <span className="orange"> build something awesome together!</span>
+        </motion.p>
+
+        <motion.p
+          className="about-easter-egg"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 0.7, y: 0 }}
+          transition={{ duration: 1, delay: 3, ease: "easeOut" }}
+        >
+          Fun fact: I can deadlift more than I can{" "}
+          <span className="orange">console.log()</span> 😄
         </motion.p>
       </div>
 
