@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import certifications from "@/data/certifications";
 
 const CertificationCard = ({ image, title, issuer, year }) => {
   return (

@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 
 import "../styles/ContactForm.css";
+import { fireConfetti } from "@/utility/fireConfetti";
 
 const SERVICE_ID = "service_vq76i99";
 const TEMPLATE_ID = "template_eg972o8";
@@ -34,6 +35,8 @@ const ContactForm = () => {
       .then(() => {
         setStatus("Message sent! ✅");
         setFormData({ name: "", email: "", message: "" });
+        fireConfetti();
+        setTimeout(() => setStatus(""), 3000);
       })
       .catch((error) => {
         console.error("EmailJS error", error);
