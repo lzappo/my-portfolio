@@ -1,5 +1,6 @@
 import "../styles/SkillsPage.css";
 import skills from "@/data/skills.jsx";
+import SkillCard from "@/components/SkillCard";
 
 const SkillsPage = () => {
   return (
@@ -7,10 +8,7 @@ const SkillsPage = () => {
       <h2 className="skills-title">Professional Skillset</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
-          <div key={index} className="skill-card">
-            {skill.icon}
-            <h3>{skill.name}</h3>
-          </div>
+          <SkillCard key={index} icon={skill.icon} name={skill.name} />
         ))}
       </div>
     </section>

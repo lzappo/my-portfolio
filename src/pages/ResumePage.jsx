@@ -1,60 +1,9 @@
-import "../styles/ResumePage.css";
 import { FaDownload } from "react-icons/fa";
 import resumePDF from "../assets/LuiZappitelli_CV.pdf";
 import resumeImage from "../assets/resumeTemplate.png";
-import react1CertImg from "../assets/certifications/react1.png";
-import react2CertImg from "../assets/certifications/react2.png";
-import js1CertImg from "../assets/certifications/js1.png";
-import js2CertImg from "../assets/certifications/js2.png";
-import htmlcssCertImg from "../assets/certifications/html-css.png";
-import reactNative1CertImg from '../assets/certifications/react-native1.png';
-import reactNative2CertImg from '../assets/certifications/react-native1.png';
-
-
-const certifications = [
-  {
-    title: "The Ultimate HTML 5 & CSS3 Series",
-    issuer: "CodeWithMosh",
-    year: "2024",
-    image: htmlcssCertImg,
-  },
-  {
-    title: "Ultimate JavaScript Part 1: Fundamentals",
-    issuer: "CodeWithMosh",
-    year: "2024",
-    image: js1CertImg,
-  },
-  {
-    title: "Ultimate JavaScript Part 2: Advanced Topics",
-    issuer: "CodeWithMosh",
-    year: "2025",
-    image: js2CertImg,
-  },
-  {
-    title: "React 18 for Beginners",
-    issuer: "CodeWithMosh",
-    year: "2024",
-    image: react1CertImg,
-  },
-  {
-    title: "React 18: Intermediate Topics",
-    issuer: "CodeWithMosh",
-    year: "2024",
-    image: react2CertImg,
-  },
-  {
-    title: "The Ultimate React Native Series: Fundamentals",
-    issuer: "CodeWithMosh",
-    year: "2025",
-    image: reactNative1CertImg,
-  },
-  {
-    title: "The Ultimate React Native Series: Advanced Concepts",
-    issuer: "CodeWithMosh",
-    year: "2025",
-    image: reactNative2CertImg,
-  },
-];
+import "../styles/ResumePage.css";
+import CertificationCard from "@/components/CertificationCard";
+import certifications from "@/data/certifications";
 
 const ResumePage = () => {
   return (
@@ -81,12 +30,13 @@ const ResumePage = () => {
         <h3 className="certifications-title">Certifications & Courses</h3>
         <div className="certifications-grid">
           {certifications.map((cert, index) => (
-            <div key={index} className="cert-card">
-              <img src={cert.image} alt={cert.title} className="cert-image" />
-              <p className="cert-text">
-                <strong>{cert.title}</strong> - {cert.issuer} ({cert.year})
-              </p>
-            </div>
+            <CertificationCard
+              key={index}
+              image={cert.image}
+              title={cert.title}
+              issuer={cert.issuer}
+              year={cert.year}
+            />
           ))}
         </div>
       </div>

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import useScrollReveal from "@/hooks/useScrollReveal";
 import useIsMobile from "@/hooks/useIsMobile";
@@ -57,10 +58,6 @@ const ProjectCard = ({ project, index }) => {
   );
 };
 
-export default ProjectCard;
-
-import PropTypes from "prop-types";
-
 ProjectCard.propTypes = {
   project: PropTypes.shape({
     image: PropTypes.string.isRequired,
@@ -72,3 +69,5 @@ ProjectCard.propTypes = {
   }),
   index: PropTypes.number.isRequired,
 };
+
+export default ProjectCard;
