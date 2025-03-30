@@ -1,16 +1,16 @@
 .find-me-section {
   text-align: center;
-  padding-top: 3rem;
+  padding: 3rem 0;
   opacity: 0;
   transform: translateY(40px);
   animation: fadeInUp 1.5s forwards ease-out;
 }
-
+/* 
 @media (min-width: 768px) {
   .find-me-section {
     padding: 0;
   }
-}
+} */
 
 .find-me-section h2 {
   font-size: 2rem;
