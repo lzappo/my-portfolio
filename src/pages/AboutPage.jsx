@@ -90,6 +90,8 @@ const AboutPage = () => {
       <div className="about-section-find-me-on">
         <FindMeOn />
       </div>
+      <h4 className="form-divider-heading">Or reach out directly 👇</h4>
+
       <ContactForm />
     </section>
   );
