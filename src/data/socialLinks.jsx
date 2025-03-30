@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 
 const socialLinks = [
   {
@@ -20,6 +20,11 @@ const socialLinks = [
     name: "Instagram",
     icon: <FaInstagram />,
     url: "https://instagram.com/lzappo",
+  },
+  {
+    name: "Facebook",
+    icon: <FaFacebook />,
+    url: "https://facebook.com/zappitelli",
   },
 ];
 
