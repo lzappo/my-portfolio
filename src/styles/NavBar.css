@@ -1,19 +1,22 @@
 .navbar {
-  background-color: #0a192f; 
+  background-color: #0a192f;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  color: white; 
+  color: white;
 }
 
 .logo {
+  align-self: center;
   font-size: 2rem;
   font-weight: bold;
-  text-decoration: none; 
-  color: #ff6600; 
-  cursor: pointer; 
+  text-decoration: none;
+  color: #ff6600;
+  cursor: pointer;
   padding: 0.5rem;
-  transition: color 0.3s, transform 0.3s;
+  transition:
+    color 0.3s,
+    transform 0.3s;
 }
 
 .logo:hover {
@@ -44,36 +47,34 @@
 
 @media (min-width: 561px) and (max-width: 768px) {
   .nav-list.open {
-    padding-right: 7rem; 
+    padding-right: 7rem;
   }
 }
 @media (min-width: 431px) and (max-width: 560px) {
   .nav-list.open {
-    padding-right: 5rem; 
+    padding-right: 5rem;
   }
 }
 @media (max-width: 430px) {
   .nav-list.open {
-     padding-right: 2.3rem; 
-    }
+    padding-right: 2.3rem;
   }
+}
 @media (max-width: 414px) {
   .nav-list.open {
-     padding-right: 1.9rem; 
-    }
+    padding-right: 1.9rem;
   }
-  @media (max-width: 375px) {
-    .nav-list.open {
-       padding-right: 1.3rem; 
-      }
+}
+@media (max-width: 375px) {
+  .nav-list.open {
+    padding-right: 1.3rem;
   }
+}
 @media (max-width: 360px) {
   .nav-list.open {
-     padding-right: 1rem; 
-    }
+    padding-right: 1rem;
   }
-  
-
+}
 
 .nav-list li {
   margin: 0;
@@ -104,8 +105,10 @@
   color: white;
   cursor: pointer;
   padding: 0.5rem;
-  transition: transform 0.3s ease, opacity, 0.3s ease;
-  
+  transition:
+    transform 0.3s ease,
+    opacity,
+    0.3s ease;
 }
 
 .navbar-toggle svg {
@@ -114,7 +117,9 @@
   height: 30px;
   transform: rotate(0deg);
   transform-origin: center;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .navbar-toggle.open svg {
@@ -138,42 +143,40 @@
   transform: rotate(180deg);
 }
 
-
 @media (min-width: 768px) {
   .navbar-toggle {
     display: none;
   }
 
   .navbar-menu {
-      flex-direction: row; 
-      align-items: center; 
-    }
+    flex-direction: row;
+    align-items: center;
+  }
 
   .nav-list {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
   }
   .nav-list.open {
-      display: flex; 
-      padding: 0; 
-    }
+    display: flex;
+    padding: 0;
+  }
 
-    .nav-list a {
-      font-size: 1.2rem;
-    }
+  .nav-list a {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .nav-list {
-    flex-direction: row; 
+    flex-direction: row;
     gap: 2rem;
   }
 
   .nav-list a {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-  
   }
 
   .nav-list a .nav-icon {
@@ -186,32 +189,31 @@
     padding: 1rem 3rem;
   }
   .nav-list {
-    flex-direction: row; 
+    flex-direction: row;
     gap: 2rem;
   }
 
   .nav-list a {
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
   }
 }
 
 @media (max-width: 480px) {
   .nav-list.open {
-      gap: 1.5rem; 
-    }
+    gap: 1.5rem;
+  }
 
- 
   .nav-list {
-      gap: 0.5rem;
-    }
-    .navbar-toggle .icon-wrapper {
-      width: 40px;
-      height: 40px;
-    }
-    .nav-list a .nav-icon {
-      font-size: 1.8rem; 
-    }
+    gap: 0.5rem;
+  }
+  .navbar-toggle .icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  .nav-list a .nav-icon {
+    font-size: 1.8rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -219,14 +221,6 @@
     font-size: 1.2rem;
   }
   .nav-list {
-      gap: 2.5rem;
-    }
+    gap: 2.5rem;
+  }
 }
-
-
-
-
- 
-
-
-  
