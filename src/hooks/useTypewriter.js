@@ -36,7 +36,7 @@ const useTypewriter = (
     };
 
     isDeleting ? deleteBackward() : typeForward();
-  }, [index, isDeleting]);
+  }, [index, isDeleting, roles, typingSpeed, deletingSpeed, pause]);
 
   return {
     text: displayedText,
