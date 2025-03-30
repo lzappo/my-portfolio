@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import heroImage from "../assets/hero-image.svg";
 import useTypewriter from "@/hooks/useTypewriter";
+import heroImage from "../assets/hero-image.svg";
 
 const roles = [
   { text: "Front-End Developer", emoji: "💻" },
