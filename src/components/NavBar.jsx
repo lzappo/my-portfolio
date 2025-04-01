@@ -3,13 +3,8 @@ import "../styles/NavBar.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import {
-  FaHome,
-  FaUserAlt,
-  FaLaptopCode,
-  FaProjectDiagram,
-  FaFileAlt,
-} from "react-icons/fa";
+import { FaHome, FaUserAlt, FaLaptopCode, FaProjectDiagram, FaFileAlt } from "react-icons/fa";
+import LZLogo from "@/assets/svg/LZLogo.svg?react";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +42,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="logo ">
-        LZ
+        <LZLogo className="nav-logo" />
       </Link>
 
       <div className="navbar-menu">
@@ -58,9 +53,7 @@ const NavBar = () => {
           }}
           aria-label="Toggle navigation"
         >
-          <div className="icon-wrapper">
-            {isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
-          </div>
+          <div className="icon-wrapper">{isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}</div>
         </button>
         <ul className={`nav-list ${isOpen ? "open" : ""}`}>
           {navLinks.map((link, index) => (
