@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaHome, FaUserAlt, FaLaptopCode, FaProjectDiagram, FaFileAlt } from "react-icons/fa";
 import LZLogo from "@/assets/svg/LZLogo.svg?react";
+import navLinks from "@/data/navLinks.jsx";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,34 +20,6 @@ const NavBar = () => {
   }, []);
 
   const closeMenu = () => setIsOpen(false);
-
-  const navLinks = [
-    {
-      path: "/",
-      name: "Home",
-      icon: <FaHome className="nav-icon" />,
-    },
-    {
-      path: "/about",
-      name: "About",
-      icon: <FaUserAlt className="nav-icon" />,
-    },
-    {
-      path: "/skills",
-      name: "Skills",
-      icon: <FaLaptopCode className="nav-icon" />,
-    },
-    {
-      path: "/projects",
-      name: "Projects",
-      icon: <FaProjectDiagram className="nav-icon" />,
-    },
-    {
-      path: "/resume",
-      name: "Resume",
-      icon: <FaFileAlt className="nav-icon" />,
-    },
-  ];
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
