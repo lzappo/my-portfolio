@@ -11,17 +11,17 @@ const AboutPage = () => {
       <div className="about-page">
         <div className="about-content">
           <motion.h2
-            className="about-title"
+            className="about-page-title"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            About Me
+            Get to Know <span className="orange">Me</span>
           </motion.h2>
 
           {[
-            `Hey, I'm Lui Zappitelli — a passionate`,
+            `Hey, I'm Lui Zappitelli — a passionate software developer.`,
             `I'm constantly leveling up my skills — whether it's diving deeper into UI/UX, experimenting with animations and APIs, or just shipping clean, scalable code.`,
             `When I'm not coding, you'll find me at the gym pushing my limits. I believe in self-improvement through discipline — in tech, fitness, and life.`,
             `My goal is to create impactful projects that blend aesthetics with performance. Let’s build something awesome together!`,

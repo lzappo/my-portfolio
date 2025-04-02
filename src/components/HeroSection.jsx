@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import useTypewriter from "@/hooks/useTypewriter";
 import heroImage from "../assets/hero-image.svg";
+import WavingHand from "./WavingHand";
 
 const roles = [
   { text: "Front-End Developer", emoji: "💻" },
@@ -24,7 +25,12 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h1 className="hero-title">Hi, I'm Lui Zappitelli</h1>
+        <h1 className="hero-title">
+          Hi There! <WavingHand />
+        </h1>
+        <h2 className="hero-title-intro">
+          I'm <span className="my-name">Lui Zappitelli</span>
+        </h2>
         <p className="hero-subtitle subtitle-with-emoji">
           {text}
           <span className="emoji"> {emoji}</span>
