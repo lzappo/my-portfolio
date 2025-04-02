@@ -4,12 +4,20 @@
   justify-content: space-between;
   padding: 1rem;
   color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
   text-decoration: none;
   cursor: pointer;
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo {
@@ -150,18 +158,15 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .navbar-toggle {
     display: none;
   }
-
   .navbar-menu {
     flex-direction: row;
     align-items: center;
     padding-right: 1.5rem;
   }
-
   .nav-list {
     display: flex;
     flex-direction: row;
@@ -171,7 +176,6 @@
     display: flex;
     padding: 0;
   }
-
   .nav-list a {
     font-size: 1.2rem;
   }

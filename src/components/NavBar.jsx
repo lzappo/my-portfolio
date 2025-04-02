@@ -1,6 +1,6 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
-import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaHome, FaUserAlt, FaLaptopCode, FaProjectDiagram, FaFileAlt } from "react-icons/fa";
@@ -8,6 +8,16 @@ import LZLogo from "@/assets/svg/LZLogo.svg?react";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const closeMenu = () => setIsOpen(false);
 
@@ -40,7 +50,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <Link to="/" className="logo ">
         <LZLogo className="nav-logo" />
       </Link>
