@@ -52,8 +52,11 @@ const TechMarquee = () => {
       <div className="tech-marquee" style={{ "--duration": animationDuration }}>
         <div className="marquee-track">
           {repeatedStack.map((tech, index) => (
-            <div className="marquee-icon" key={index} title={tech.name}>
-              {tech.icon}
+            <div className="marquee-icon-wrapper" key={index}>
+              <div className="marquee-icon" title={tech.name}>
+                {tech.icon}
+                <span className="tooltip">{tech.name}</span>
+              </div>
             </div>
           ))}
         </div>
