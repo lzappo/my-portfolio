@@ -4,6 +4,7 @@ import "../styles/AboutPage.css";
 import aboutImage from "../assets/about-image.svg";
 import FindMeOn from "@/components/FindMeOn";
 import ContactForm from "@/components/ContactForm";
+import Quote from "@/components/Quote";
 
 const AboutPage = () => {
   return (
@@ -48,6 +49,8 @@ const AboutPage = () => {
             Fun fact: I can deadlift more than I can <span className="orange">console.log()</span>{" "}
             😄
           </motion.p>
+
+          <Quote />
         </div>
 
         <motion.div
