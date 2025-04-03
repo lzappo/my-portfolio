@@ -8,7 +8,7 @@ const SkillsPage = () => {
       <h2 className="skills-title">Professional Skillset</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
-          <SkillCard key={index} icon={skill.icon} name={skill.name} />
+          <SkillCard key={index} icon={skill.icon} name={skill.name} index={index} />
         ))}
       </div>
     </section>
