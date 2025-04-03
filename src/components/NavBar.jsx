@@ -22,33 +22,37 @@ const NavBar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <Link to="/" className="logo ">
-        <LZLogo className="nav-logo" />
-      </Link>
+    <>
+      {isOpen && <div className="overlay" onClick={closeMenu}></div>}
 
-      <div className="navbar-menu">
-        <button
-          className={`navbar-toggle ${isOpen ? "open" : ""}`}
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-          aria-label="Toggle navigation"
-        >
-          <div className="icon-wrapper">{isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}</div>
-        </button>
-        <ul className={`nav-list ${isOpen ? "open" : ""}`}>
-          {navLinks.map((link, index) => (
-            <li key={index}>
-              <Link className="nav-item" to={link.path} onClick={closeMenu}>
-                {link.icon}
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </nav>
+      <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+        <Link to="/" className="logo ">
+          <LZLogo className="nav-logo" />
+        </Link>
+
+        <div className="navbar-menu">
+          <button
+            className={`navbar-toggle ${isOpen ? "open" : ""}`}
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+            aria-label="Toggle navigation"
+          >
+            <div className="icon-wrapper">{isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}</div>
+          </button>
+          <ul className={`nav-list ${isOpen ? "open" : ""}`}>
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <Link className="nav-item" to={link.path} onClick={closeMenu}>
+                  {link.icon}
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+    </>
   );
 };
 

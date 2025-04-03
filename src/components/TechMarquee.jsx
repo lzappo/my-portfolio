@@ -1,5 +1,15 @@
 import "../styles/TechMarquee.css";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaFigma, FaGithub } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGitAlt,
+  FaFigma,
+  FaGithub,
+  FaNpm,
+  FaYarn,
+} from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 import {
   SiMacos,
@@ -24,9 +34,11 @@ const techStack = [
   { icon: <FaReact className="react-native-icon" />, name: "React Native" },
   { icon: <SiApple />, name: "iOS" },
   { icon: <SiAndroid />, name: "Android" },
+  { icon: <VscVscode />, name: "VS Code" },
   { icon: <FaGitAlt />, name: "Git" },
   { icon: <FaGithub />, name: "GitHub" },
-  { icon: <VscVscode />, name: "VS Code" },
+  { icon: <FaNpm />, name: "Npm" },
+  { icon: <FaYarn />, name: "Yarn" },
   { icon: <SiVite />, name: "Vite" },
   { icon: <SiVercel />, name: "Vercel" },
   { icon: <SiExpo />, name: "Expo" },
@@ -44,7 +56,7 @@ const TechMarquee = () => {
     .fill(techStack)
     .flat();
 
-  const animationDuration = isMobile ? "40s" : "120s";
+  const animationDuration = isMobile ? "50s" : "160s";
 
   return (
     <section className="tech-marquee-section">
