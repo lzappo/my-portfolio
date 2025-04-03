@@ -22,9 +22,9 @@ const TechMarquee = () => {
 
   return (
     <div className="tech-marquee">
-      <div className="marquee-content">
+      <div className="marquee-track">
         {repeatedStack.map((tech, index) => (
-          <div className="tech-icon" key={index} title={tech.name}>
+          <div className="marquee-icon" key={index} title={tech.name}>
             {tech.icon}
           </div>
         ))}

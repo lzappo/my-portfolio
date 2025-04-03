@@ -37,12 +37,14 @@
   text-align: center;
   transition:
     transform 0.3s ease-in-out,
-    box-shadow 0.3s ease-in-out;
+    box-shadow 0.3s ease-in-out,
+    background 0.3s ease;
 }
 
 .project-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(90, 255, 216, 0.5);
+  background: rgba(90, 255, 216, 0.08);
 }
 
 .project-image {
