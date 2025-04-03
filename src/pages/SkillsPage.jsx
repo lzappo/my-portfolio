@@ -1,6 +1,7 @@
 import "../styles/SkillsPage.css";
 import skills from "@/data/skills.jsx";
 import SkillCard from "@/components/SkillCard";
+import TechMarquee from "@/components/TechMarquee";
 
 const SkillsPage = () => {
   return (
@@ -11,6 +12,7 @@ const SkillsPage = () => {
           <SkillCard key={index} icon={skill.icon} name={skill.name} index={index} />
         ))}
       </div>
+      <TechMarquee />
     </section>
   );
 };

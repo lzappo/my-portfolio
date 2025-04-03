@@ -1,0 +1,41 @@
+.tech-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 2.5rem;
+}
+
+.marquee-content {
+  display: inline-flex;
+  gap: 2rem;
+  animation: scroll 20s linear infinite;
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #5affd8;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+  color: #ff6600;
+  cursor: default;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
