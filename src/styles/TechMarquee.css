@@ -1,3 +1,15 @@
+.tech-marquee-section {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.tech-marquee-title {
+  font-size: 1.8rem;
+  color: #64ffda;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
 .tech-marquee {
   overflow: hidden;
   white-space: nowrap;
@@ -5,16 +17,18 @@
   padding: 1.5rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  margin-top: 2.5rem;
 }
 
 .marquee-track {
   display: inline-flex;
   gap: 2rem;
-  animation: scroll 20s linear infinite;
+  animation: scroll var(--duration) linear infinite;
+  width: max-content;
+  will-change: transform;
 }
 
-.marquee-track:hover {
+.marquee-track:hover,
+.tech-marquee:active {
   animation-play-state: paused;
 }
 
@@ -22,7 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #5affd8;
   transition:
     transform 0.3s ease,
@@ -33,6 +47,32 @@
   transform: scale(1.2);
   color: #ff6600;
   cursor: default;
+}
+
+.marquee-icon .react-native-icon {
+  transform: rotate(15deg);
+  color: #61dafb;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.marquee-icon:hover .react-native-icon {
+  color: #ffa94d;
+}
+
+@media (min-width: 768px) {
+  .marquee-icon {
+    font-size: 2.5rem;
+    margin: 0 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .marquee-icon {
+    font-size: 3rem;
+    margin: 0 3rem;
+  }
 }
 
 @keyframes scroll {
