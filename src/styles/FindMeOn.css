@@ -5,17 +5,10 @@
   transform: translateY(40px);
   animation: fadeInUp 1.5s forwards ease-out;
 }
-/* 
-@media (min-width: 768px) {
-  .find-me-section {
-    padding: 0;
-  }
-} */
 
 .find-me-section h2 {
-  font-size: 2rem;
+  font-size: var(--font-size-xxxl);
   margin-bottom: 1rem;
-  color: #64ffda;
 }
 
 .social-links {
@@ -25,8 +18,8 @@
 }
 
 .social-icon {
-  font-size: 2.5rem;
-  color: #ccd6f6;
+  font-size: var(--font-size-4xl);
+  color: var(--text-color-dim);
   transition:
     transform 0.3s ease,
     color 0.3s ease;
@@ -34,7 +27,7 @@
 
 .social-icon:hover {
   transform: scale(1.1);
-  color: #64ffda;
+  color: var(--primary-color);
 }
 
 @media (min-width: 768px) {

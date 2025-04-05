@@ -11,10 +11,10 @@
 .contact-form textarea {
   padding: 0.85rem 1rem;
   border-radius: 8px;
-  background: #ccd6f6;
-  color: #38393b;
-  border: 1px solid #64ffda;
-  font-size: 1rem;
+  background: var(--text-color-dim);
+  color: var(--form-text-color);
+  border: 1px solid var(--primary-color);
+  font-size: var(--font-size-base);
   transition: border-color 0.3s ease;
 }
 
@@ -26,15 +26,15 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border: 2px solid #ff6600;
-  box-shadow: 0 0 8px rgba(255, 102, 0, 0.6);
+  border: 2px solid var(--secondary-color);
+  box-shadow: 0 0 8px var(--primary-color);
   transition: all 0.3s ease;
 }
 
 .form-status {
   text-align: center;
   font-weight: 600;
-  font-size: 1rem;
-  color: #5affd8;
+  font-size: var(--font-size-base);
+  color: var(--secondary-color);
   transition: all 0.3s ease-in-out;
 }

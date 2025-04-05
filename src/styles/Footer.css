@@ -1,9 +1,9 @@
 .footer {
-  background-color: #0a192f;
-  color: #ccd6f6;
+  background-color: var(--footer-bg);
+  color: var(--text-color-dim);
   padding: 1rem 0;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
   width: 100%;
   position: relative;
 }
@@ -17,10 +17,10 @@
 }
 
 .footer-brand h3 {
-  font-size: 1.5rem;
-  color: #64ffda;
+  font-size: var(--font-size-xl);
   padding: 0;
 }
+
 .footer-brand p {
   padding: 0;
 }
@@ -30,12 +30,12 @@
   gap: 1rem;
 }
 .footer-socials a {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
 }
 
 .social-icon {
-  font-size: 1rem;
-  color: #ccd6f6;
+  font-size: var(--font-size-base);
+  color: var(--text-color-dim);
   transition:
     transform 0.3s ease,
     color 0.3s ease;
@@ -43,7 +43,7 @@
 
 .social-icon:hover {
   transform: scale(1.1);
-  color: #64ffda;
+  color: var(--primary-color);
 }
 
 .footer-copyright {

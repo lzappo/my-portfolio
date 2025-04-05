@@ -1,11 +1,11 @@
 .projects-section {
   text-align: center;
   padding: 4rem 2rem;
-  color: #ccd6f6;
+  color: var(--text-color-dim);
 }
 
 .projects-title {
-  font-size: 2rem;
+  font-size: var(--font-size-xxxl);
   font-weight: bold;
   margin-bottom: 3.5rem;
 }
@@ -18,7 +18,7 @@
 .projects-title p {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: var(--font-size-base);
 }
 
 .projects-grid {
@@ -31,7 +31,7 @@
 
 .project-card {
   max-width: 500px;
-  border: 2px solid #5affd8;
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
   padding: 1.5rem;
   text-align: center;
@@ -43,8 +43,8 @@
 
 .project-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(90, 255, 216, 0.5);
-  background: rgba(90, 255, 216, 0.08);
+  box-shadow: 0 0 10px var(--hover-card-color);
+  background: var(--hover-bg-glow);
 }
 
 .project-image {
@@ -56,13 +56,13 @@
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .project-description {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   margin-bottom: 1rem;
 }
 
@@ -76,9 +76,9 @@
 }
 
 .project-tag {
-  font-size: 0.75rem;
-  background-color: #ff6600;
-  color: white;
+  font-size: var(--font-size-xs);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   padding: 0.2rem 0.5rem;
   border-radius: 12px;
   font-weight: 500;
@@ -92,10 +92,10 @@
 
 .project-btn {
   padding: 0.8rem 2rem;
-  border: 2px solid #5affd8;
+  border: 2px solid var(--primary-color);
   border-radius: 5px;
-  font-size: 1rem;
-  color: #5affd8;
+  font-size: var(--font-size-base);
+  color: var(--primary-color);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   display: flex;
@@ -108,8 +108,8 @@
 }
 
 .project-btn:hover {
-  background-color: #5affd8;
-  color: #333;
+  background-color: var(--primary-color);
+  color: var(--btn-hover-text);
 }
 
 @media (min-width: 500px) and (max-width: 768px) {

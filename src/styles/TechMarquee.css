@@ -4,8 +4,8 @@
 }
 
 .tech-marquee-title {
-  font-size: 1.8rem;
-  color: #64ffda;
+  font-size: var(--font-size-xxl);
+  color: var(--primary-color);
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -37,8 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.2rem;
-  color: #5affd8;
+  font-size: var(--font-size-xxxl);
+  color: var(--primary-color);
   transition:
     transform 0.3s ease,
     color 0.3s ease;
@@ -46,7 +46,7 @@
 
 .marquee-icon:hover {
   transform: scale(1.2);
-  color: #ff6600;
+  color: var(--secondary-color);
   cursor: default;
 }
 
@@ -72,10 +72,10 @@
   bottom: -1.3rem;
   left: 50%;
   transform: translateX(-50%) translateY(4px);
-  color: #ccd6f6;
+  color: var(--text-color-dim);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  font-size: 0.7rem;
+  font-size: var(--font-size-xxs);
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
@@ -95,7 +95,7 @@
 
 @media (min-width: 768px) {
   .marquee-icon {
-    font-size: 2.5rem;
+    font-size: var(--font-size-4xl);
     margin: 0 2.5rem;
   }
 }

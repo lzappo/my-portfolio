@@ -3,7 +3,7 @@
 }
 
 .resume-title {
-  font-size: 2rem;
+  font-size: var(--font-size-xxxl);
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
@@ -22,9 +22,9 @@
   width: 100%;
   max-width: 1000px;
   height: auto;
-  border: 2px solid #5affd8;
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--shadow-light);
 }
 
 .resume-download {
@@ -32,17 +32,17 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.8rem 2rem;
-  border: 2px solid #5affd8;
+  border: 2px solid var(--primary-color);
   border-radius: 5px;
-  font-size: 1rem;
-  color: #5affd8;
+  font-size: var(--font-size-base);
+  color: var(--primary-color);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
 .resume-download:hover {
-  background-color: #5affd8;
-  color: #333;
+  background-color: var(--primary-color);
+  color: var(--btn-hover-text);
 }
 
 .certifications-section {
@@ -51,7 +51,7 @@
 }
 
 .certifications-title {
-  font-size: 1.8rem;
+  font-size: var(--font-size-xxl);
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
@@ -65,11 +65,10 @@
 }
 
 .cert-card {
-  background: rgba(255, 255, 255, 0.05);
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 2px solid #5affd8;
+  box-shadow: 0 4px 6px var(--shadow-light);
+  border: 2px solid var(--primary-color);
   text-align: center;
   transition:
     transform 0.3s ease-in-out,
@@ -79,8 +78,8 @@
 
 .cert-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(90, 255, 216, 0.5);
-  background: rgba(90, 255, 216, 0.08);
+  box-shadow: 0 0 10px var(--hover-card-color);
+  background: var(--hover-bg-glow);
 }
 
 .cert-image {
@@ -88,14 +87,14 @@
   max-width: 600px;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--shadow-light);
   transition: transform 0.3s ease-in-out;
 }
 
 .cert-text {
   margin-top: 0.8rem;
-  font-size: 1rem;
-  color: #ccd6f6;
+  font-size: var(--font-size-base);
+  color: var(--text-color-dim);
 }
 
 @media (min-width: 1024px) {
