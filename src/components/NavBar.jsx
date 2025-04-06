@@ -52,11 +52,8 @@ const NavBar = () => {
                   </Link>
                 </li>
               ))}
-              <li className="theme-toggle-mobile">
-                <ThemeToggle />
-              </li>
             </ul>
-            <div className="theme-toggle-desktop">
+            <div className={`theme-toggle-wrapper ${isOpen ? "show" : "hide"}`}>
               <ThemeToggle />
             </div>
           </div>

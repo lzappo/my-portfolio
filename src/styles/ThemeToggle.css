@@ -2,7 +2,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--primary-color);
   transition:
     transform 0.3s ease,
@@ -14,20 +14,23 @@
   color: var(--secondary-color);
 }
 
-.theme-toggle-desktop {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .theme-toggle-btn {
-    padding-left: 3rem;
+    font-size: 1.5rem;
+    padding-right: 2rem;
   }
-  .theme-toggle-desktop {
-    display: block;
-    margin-right: 1.5rem;
+  .theme-toggle-wrapper {
+    margin-top: 0;
+    justify-content: flex-end;
   }
 
-  .theme-toggle-mobile {
-    display: none;
+  .navbar-content {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .theme-toggle-btn {
+    padding: 0 1rem 0 2.5rem;
   }
 }
