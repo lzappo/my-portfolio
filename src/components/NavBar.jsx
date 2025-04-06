@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import LZLogo from "@/assets/svg/LZLogo.svg?react";
 import navLinks from "@/data/navLinks.jsx";
+import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,16 +41,25 @@ const NavBar = () => {
           >
             <div className="icon-wrapper">{isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}</div>
           </button>
-          <ul className={`nav-list ${isOpen ? "open" : ""}`}>
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <Link className="nav-item" to={link.path} onClick={closeMenu}>
-                  {link.icon}
-                  {link.name}
-                </Link>
+
+          <div className="navbar-content">
+            <ul className={`nav-list ${isOpen ? "open" : ""}`}>
+              {navLinks.map((link, index) => (
+                <li key={index}>
+                  <Link className="nav-item" to={link.path} onClick={closeMenu}>
+                    {link.icon}
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+              <li className="theme-toggle-mobile">
+                <ThemeToggle />
               </li>
-            ))}
-          </ul>
+            </ul>
+            <div className="theme-toggle-desktop">
+              <ThemeToggle />
+            </div>
+          </div>
         </div>
       </nav>
     </>
