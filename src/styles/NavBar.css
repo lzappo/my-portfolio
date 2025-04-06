@@ -62,8 +62,6 @@
   display: flex;
   width: 100%;
   align-items: center;
-
-  background: rgba(255, 0, 0, 0.05); /* temp debug */
 }
 
 .nav-list {
@@ -302,25 +300,25 @@
 
 @media (min-width: 440px) and (max-width: 459px) {
   .navbar-content {
-    padding-right: 5.6rem;
+    padding-right: 5.5rem;
   }
 }
 
 @media (min-width: 460px) and (max-width: 479px) {
   .navbar-content {
-    padding-right: 6rem;
+    padding-right: 5.5rem;
   }
 }
 
 @media (min-width: 480px) and (max-width: 499px) {
   .navbar-content {
-    padding-right: 6rem;
+    padding-right: 5.5rem;
   }
 }
 
 @media (min-width: 500px) and (max-width: 519px) {
   .navbar-content {
-    padding-right: 6rem;
+    padding-right: 5.5rem;
   }
 }
 
