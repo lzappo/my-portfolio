@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 import resumePDF from "../assets/LuiZappitelli_CV.pdf";
@@ -7,6 +8,8 @@ import CertificationCard from "@/components/CertificationCard";
 import certifications from "@/data/certifications";
 
 const ResumePage = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <section className="resume-section">
       <motion.h2
@@ -38,7 +41,13 @@ const ResumePage = () => {
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <img src={resumeImage} alt="Lui Zappitelli Resume" className="resume-image" />
+        {!imageLoaded && <div className="resume-skeleton" />}
+        <img
+          src={resumeImage}
+          alt="Lui Zappitelli Resume"
+          className={`resume-image ${imageLoaded ? "visible" : "hidden"}`}
+          onLoad={() => setImageLoaded(true)}
+        />
       </motion.div>
 
       <div className="certifications-section">

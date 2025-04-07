@@ -105,3 +105,51 @@
     max-width: 600px;
   }
 }
+
+.resume-preview {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 600px;
+}
+
+.resume-skeleton {
+  height: 600px;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #cfcfcf 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.resume-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.resume-image.visible {
+  opacity: 1;
+  z-index: 2;
+}
+
+.resume-image.hidden {
+  opacity: 0;
+  z-index: 0;
+}
