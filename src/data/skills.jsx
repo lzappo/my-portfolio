@@ -8,7 +8,7 @@ const skills = [
   { name: "JavaScript", icon: <IoLogoJavascript className="skill-icon" /> },
   { name: "TypeScript", icon: <SiTypescript className="skill-icon" /> },
   { name: "React", icon: <SiReact className="skill-icon" /> },
-  { name: "React Native📱", icon: <SiReact className="skill-icon" /> }, // subtle but clear
+  { name: "React Native", icon: <SiReact className="skill-icon" /> }, // subtle but clear
 ];
 
 export default skills;
