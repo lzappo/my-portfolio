@@ -91,7 +91,6 @@
 }
 
 .project-btn {
-  padding: 0.8rem 2rem;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: var(--font-size-base);
