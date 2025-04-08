@@ -13,7 +13,7 @@
 }
 
 .quote-text {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-style: italic;
   color: var(--text-color-dim);
   margin-bottom: var(--font-size-lg);
@@ -27,7 +27,7 @@
 
 @media (min-width: 1024px) {
   .quote-text {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-xxl);
   }
 
   .quote-section {
