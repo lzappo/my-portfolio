@@ -26,7 +26,7 @@
 
 .hero-title,
 .intro-title {
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-4xl);
   font-weight: bold;
   margin-bottom: 1rem;
   text-align: center;
@@ -51,6 +51,10 @@
 .intro-description {
   line-height: 1.5;
   margin-bottom: 1.5rem;
+}
+
+.intro-description {
+  font-size: var(--font-size-lg);
 }
 
 .subtitle-with-emoji {
