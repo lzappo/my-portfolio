@@ -6,7 +6,7 @@
 .skills-title {
   font-size: var(--font-size-4xl);
   margin-bottom: 2rem;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .skills-grid {
