@@ -20,6 +20,12 @@
 
 .currently-working li {
   font-size: var(--font-size-base);
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   color: var(--text-color-dim);
+}
+
+@media (min-width: 1024px) {
+  .currently-working li {
+    font-size: var(--font-size-lg);
+  }
 }
