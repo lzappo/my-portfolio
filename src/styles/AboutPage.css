@@ -96,6 +96,10 @@
 }
 
 @media (min-width: 1024px) {
+  .about-page-title {
+    text-align: center;
+  }
+
   .about-content {
     max-width: 60%;
   }
