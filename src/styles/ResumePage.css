@@ -15,7 +15,10 @@
 .resume-preview {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
 }
 
 .resume-image {
@@ -25,6 +28,8 @@
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   box-shadow: 0 4px 6px var(--shadow-light);
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
 }
 
 .resume-download {
@@ -96,6 +101,25 @@
   color: var(--text-color-dim);
 }
 
+.resume-skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1c1c1c 25%, #2e2e2e 50%, #1c1c1c 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .resume-skeleton {
+    height: 800px;
+  }
+}
+
 @media (min-width: 1024px) {
   .certifications-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -103,23 +127,9 @@
   .cert-image {
     max-width: 600px;
   }
-}
-
-.resume-preview {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  min-height: 600px;
-}
-
-.resume-skeleton {
-  height: 600px;
-  width: 100%;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #e0e0e0 25%, #cfcfcf 50%, #e0e0e0 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.2s infinite;
+  .resume-skeleton {
+    height: 1000px;
+  }
 }
 
 @keyframes shimmer {
@@ -129,18 +139,6 @@
   100% {
     background-position: -200% 0;
   }
-}
-
-.resume-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  z-index: 2;
 }
 
 .resume-image.visible {
