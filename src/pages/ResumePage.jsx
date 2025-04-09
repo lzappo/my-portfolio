@@ -46,7 +46,7 @@ const ResumePage = () => {
           src={resumeImage}
           alt="Lui Zappitelli Resume"
           className={`resume-image ${imageLoaded ? "visible" : "hidden"}`}
-          onLoad={() => setTimeout(() => setImageLoaded(true), 3000)}
+          onLoad={() => setImageLoaded(true)}
         />
       </motion.div>
 
