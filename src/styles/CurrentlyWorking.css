@@ -1,0 +1,25 @@
+.currently-working {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow-light);
+}
+
+.currently-working h3 {
+  font-size: var(--font-size-xxl);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.currently-working ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.currently-working li {
+  font-size: var(--font-size-base);
+  margin-bottom: 0.8rem;
+  color: var(--text-color-dim);
+}

@@ -5,6 +5,7 @@ import aboutImage from "../assets/about-image.svg";
 import FindMeOn from "@/components/FindMeOn";
 import ContactForm from "@/components/ContactForm";
 import Quote from "@/components/Quote";
+import CurrentlyWorking from "@/components/CurrentlyWorking";
 
 const AboutPage = () => {
   return (
@@ -25,7 +26,7 @@ const AboutPage = () => {
             `Hey, I'm Lui Zappitelli — a passionate software developer.`,
             `I'm constantly leveling up my skills — whether it's diving deeper into UI/UX, experimenting with animations and APIs, or just shipping clean, scalable code.`,
             `When I'm not coding, you'll find me at the gym pushing my limits. I believe in self-improvement through discipline — in tech, fitness, and life.`,
-            `My goal is to create impactful projects that blend aesthetics with performance. Let’s build something awesome together!`,
+            `My goal is to create impactful projects that blend aesthetics with performance. Let's build something awesome together!`,
           ].map((text, index) => (
             <motion.p
               key={index}
@@ -49,6 +50,8 @@ const AboutPage = () => {
             Fun fact: I can deadlift more than I can <span className="orange">console.log()</span>{" "}
             😄
           </motion.p>
+
+          <CurrentlyWorking />
 
           <Quote />
         </div>
