@@ -16,7 +16,7 @@ const projects = [
     image: "https://lui-game-hub.vercel.app/assets/logo-ff4914e6.webp",
     github: "https://github.com/lzappo/game-hub",
     demo: "https://lui-game-hub.vercel.app/",
-    tags: ["React", "TypeScript", "Rawg API"],
+    tags: ["React", "TypeScript", "Chakra", "Rawg API"],
   },
   {
     title: "My-Portfolio",
@@ -24,15 +24,14 @@ const projects = [
     image: worldImage,
     github: "https://github.com/lzappo/my-portfolio",
     demo: "https://luizappitelli.vercel.app",
-    tags: ["React", "Framer Motion", "Responsive"],
+    tags: ["React", "JavaScript", "Custom Hooks", "Framer Motion", "Responsive"],
   },
   {
     title: "DoneWithIt",
-    description:
-      "A mobile app that serves as a marketplace when you are simply done with it!",
+    description: "A mobile app that serves as a marketplace when you are simply done with it!",
     image: DoneWithIt,
     github: "https://github.com/lzappo/DoneWithIt",
-    tags: ["React Native", "Expo", "Mobile App"],
+    tags: ["React Native", "JavaScript", "API calls", "Expo", "Mobile App"],
   },
 ];
 
