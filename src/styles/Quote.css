@@ -34,3 +34,10 @@
     padding: 2rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .quote-section {
+    max-width: 50%;
+    justify-self: center;
+  }
+}
