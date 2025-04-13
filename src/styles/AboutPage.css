@@ -42,7 +42,7 @@
 }
 
 .about-image img {
-  padding-bottom: 2rem;
+  padding: 2rem;
   width: 90%;
   max-width: 300px;
   border-radius: 10px;
@@ -91,7 +91,7 @@
     max-width: 350px;
     min-height: 245px;
     min-width: 280px;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 

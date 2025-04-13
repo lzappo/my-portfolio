@@ -19,14 +19,28 @@
   margin: 0;
 }
 
-.currently-working li {
-  font-size: var(--font-size-base);
+.custom-bullet-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   margin-bottom: 1rem;
+  font-size: var(--font-size-base);
   color: var(--text-color-dim);
+  line-height: 1.6;
+}
+
+.bullet-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.bullet-text {
+  flex: 1;
 }
 
 @media (min-width: 1024px) {
-  .currently-working li {
+  .custom-bullet-item {
     font-size: var(--font-size-lg);
+    gap: 1.5rem;
   }
 }

@@ -2,10 +2,16 @@ import { motion } from "framer-motion";
 import "../styles/CurrentlyWorking.css";
 
 const currentFocuses = [
-  "⚛️ Constantly improving this portfolio project to improve my skills and give the best UX possible!",
-  "🧠 Currently taking courses on node.js to expand my backend knowledge to become a full stack developer!",
-  "🚀 Starting an internship with JAM Digital Solutions as a front-end dev!",
-  // "💪 Building an AI-powered fitness app using React Native & Expo"
+  {
+    icon: "⚛️",
+    text: "Constantly improving this portfolio project to improve my skills and give the best UX possible!",
+  },
+  {
+    icon: "🧠",
+    text: "Currently taking courses on node.js to expand my backend knowledge to become a full stack developer!",
+  },
+  { icon: "🚀", text: "Starting an internship with JAM Digital Solutions as a front-end dev!" },
+  // { icon: "💪", text: "Building an AI-powered fitness app using React Native & Expo" }
 ];
 
 const CurrentlyWorking = () => {
@@ -34,8 +40,10 @@ const CurrentlyWorking = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.2, duration: 0.5 }}
             viewport={{ once: true }}
+            className="custom-bullet-item"
           >
-            {item}
+            <span className="bullet-icon">{item.icon}</span>
+            <span className="bullet-text">{item.text}</span>
           </motion.li>
         ))}
       </ul>
