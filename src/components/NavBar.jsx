@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -6,19 +6,11 @@ import { AiOutlineClose } from "react-icons/ai";
 import LZLogo from "@/assets/svg/LZLogo.svg?react";
 import navLinks from "@/data/navLinks.jsx";
 import ThemeToggle from "./ThemeToggle";
+import useScrollPosition from "@/hooks/useScrollPosition";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const scrolled = useScrollPosition(20);
 
   const closeMenu = () => setIsOpen(false);
 
