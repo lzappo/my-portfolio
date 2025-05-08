@@ -38,6 +38,16 @@
   flex: 1;
 }
 
+.bullet-text a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.bullet-text a:hover {
+  color: var(--secondary-color);
+}
+
 @media (min-width: 1024px) {
   .custom-bullet-item {
     font-size: var(--font-size-lg);

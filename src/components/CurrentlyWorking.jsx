@@ -3,6 +3,21 @@ import "../styles/CurrentlyWorking.css";
 
 const currentFocuses = [
   {
+    icon: "🚀",
+    text: (
+      <>
+        Internship with{" "}
+        <a href="https://www.jamdigitalsolutions.com/" target="_blank" rel="noopener noreferrer">
+          JAM Digital Solutions
+        </a>{" "}
+        as a front-end dev!
+      </>
+    ),
+  },
+
+  // { icon: "💪", text: "Building an AI-powered fitness app using React Native & Expo" },
+
+  {
     icon: "⚛️",
     text: "Constantly improving this portfolio project to improve my skills and give the best UX possible!",
   },
@@ -10,8 +25,6 @@ const currentFocuses = [
     icon: "🧠",
     text: "Currently taking courses on node.js to expand my backend knowledge to become a full stack developer!",
   },
-  { icon: "🚀", text: "Starting an internship with JAM Digital Solutions as a front-end dev!" },
-  // { icon: "💪", text: "Building an AI-powered fitness app using React Native & Expo" }
 ];
 
 const CurrentlyWorking = () => {
