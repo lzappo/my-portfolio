@@ -33,6 +33,13 @@ const projects = [
     github: "https://github.com/lzappo/DoneWithIt",
     tags: ["React Native", "JavaScript", "API calls", "Expo", "Mobile App"],
   },
+  {
+    title: "Moon Poker",
+    description: "A mobile poker app where I work as a Front-End Developer.",
+    image:
+      "https://play-lh.googleusercontent.com/TuPY8cPXBtfcOMRdDH-l5SMLu3fYrXpjOwlb4tzG1EGX6i4jnOzuN3EyR3P9dVPYnqw",
+    tags: ["React Native", "JavaScript", "Mobile App"],
+  },
 ];
 
-export default projects;
+export default projects.reverse();

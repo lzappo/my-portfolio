@@ -34,14 +34,16 @@ const ProjectCard = ({ project, index }) => {
       )}
 
       <div className="project-links">
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn project-btn"
-        >
-          <FaGithub /> GitHub
-        </a>
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn project-btn"
+          >
+            <FaGithub /> GitHub
+          </a>
+        )}
         {project.demo && (
           <a
             href={project.demo}
@@ -64,7 +66,7 @@ ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string),
-    github: PropTypes.string.isRequired,
+    github: PropTypes.string,
     demo: PropTypes.string,
   }),
   index: PropTypes.number.isRequired,
