@@ -12,7 +12,7 @@ const Quote = () => {
       viewport={{ once: true }}
     >
       <FaQuoteLeft className="quote-icon" />
-      <blockquote className="quote-text">"Build the temple-and they will come."</blockquote>
+      <blockquote className="quote-text">"Build the temple — and they will come."</blockquote>
       <p className="quote-author">- Lui Zappitelli</p>
     </motion.section>
   );
