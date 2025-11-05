@@ -1,5 +1,5 @@
 .quote-section {
-  margin-top: 2rem;
+  margin: 2rem;
   padding: 1.5rem;
   background-color: var(--quote-bg);
   border-left: 4px solid var(--secondary-color);

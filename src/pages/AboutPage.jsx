@@ -52,8 +52,6 @@ const AboutPage = () => {
           </motion.p>
 
           <CurrentlyWorking />
-
-          <Quote />
         </div>
 
         <motion.div
@@ -66,6 +64,8 @@ const AboutPage = () => {
           <img src={aboutImage} alt="Lui Zappitelli" />
         </motion.div>
       </div>
+
+      <Quote />
 
       <motion.div
         className="about-section-find-me-on"

@@ -3,10 +3,14 @@ import "../styles/CurrentlyWorking.css";
 
 const currentFocuses = [
   {
+    icon: "🎮",
+    text: "Front-End Developer with Moon Poker",
+  },
+  {
     icon: "🚀",
     text: (
       <>
-        Internship with{" "}
+        Freelance with{" "}
         <a href="https://www.jamdigitalsolutions.com/" target="_blank" rel="noopener noreferrer">
           JAM Digital Solutions
         </a>{" "}
@@ -15,7 +19,7 @@ const currentFocuses = [
     ),
   },
 
-  // { icon: "💪", text: "Building an AI-powered fitness app using React Native & Expo" },
+  { icon: "💪", text: "Building an AI-powered fitness cocahing app using React Native" },
 
   {
     icon: "⚛️",
