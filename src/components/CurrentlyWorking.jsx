@@ -4,7 +4,18 @@ import "../styles/CurrentlyWorking.css";
 const currentFocuses = [
   {
     icon: "🎮",
-    text: "Front-End Developer with Moon Poker",
+    text: (
+      <>
+        Front-End Developer with{" "}
+        <a
+          href="https://apps.apple.com/ca/app/moon-poker-daily-tournaments/id6504370095"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Moon Poker
+        </a>
+      </>
+    ),
   },
   {
     icon: "🚀",

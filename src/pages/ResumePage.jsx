@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
-import resumePDF from "../assets/LuiZappitelli_CV.pdf";
-import resumeImage from "../assets/resumeTemplate.png";
+import resumePDF from "../assets/Lui-Zappitelli-Software-Developer-Resume.pdf";
+import resumeImage from "../assets/Lui-Zappitelli-Software-Developer-Resume.jpg";
 import "../styles/ResumePage.css";
 import CertificationCard from "@/components/CertificationCard";
 import certifications from "@/data/certifications";
@@ -24,7 +24,7 @@ const ResumePage = () => {
 
       <motion.a
         href={resumePDF}
-        download="LuiZappitelli_CV.pdf"
+        download="Lui-Zappitelli-Software-Developer-Resume.pdf"
         className="btn resume-download"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
